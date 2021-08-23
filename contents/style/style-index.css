@@ -7,7 +7,7 @@ body{
     height: 100vh;
     width: 100%;
     background-color: #F1dF81;
-    background-image: url(img/background.jpg);
+    background-image: url(../../../style/img/background.jpg);
 }
 
 #header{
@@ -49,6 +49,32 @@ body{
     flex-wrap: wrap;
 }
 
+#button_home{
+    z-index: 2;
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+    background-color: darkred;
+    display: inherit;
+    float: left;
+    width: 46px;
+    height: 46px;
+    border: 5px solid white;
+    border-radius: 5px;
+    filter: drop-shadow(0 5px 0 lightslategray);
+}
+
+#button_home:hover{
+    background-color: orangered;
+    cursor:pointer;
+}
+
+i{
+    font-size: 26px;
+    color:white;
+    margin:11px 9px;
+}
+
 #footer{
     /*background-color: cadetblue;*/
     height:15vh;
@@ -63,7 +89,7 @@ body{
     align-items:center;
     justify-content: center;
     background-color: #E5E5E5;
-    width: 330px;
+    width: 430px;
     height: 230px;
     margin: 10px;
     outline-color: white;
@@ -82,7 +108,7 @@ body{
 }
 
 #unready{
-    filter:  sepia(50%) drop-shadow(0 7px 0 #d0694d);
+    filter: sepia(50%) drop-shadow(0 7px 0 #d0694d);
     
     background-image: url(img/notReady-simple.jpg);
     background-size: cover;
@@ -103,28 +129,21 @@ body{
 }
 .Bt1{
     transition: .1s ease-in;
-    background-image: url(img/title_3.jpg);
+    background-image: url(../style/button1.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .Bt2{
     transition: .1s ease-in;
-    background-image: url(img/title_4.jpg);
+    background-image: url(../style/button2.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .Bt3{
     transition: .1s ease-in;
-    background-image: url(img/title_2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.Bt4{
-    transition: .1s ease-in;
-    background-image: url(img/title_1.jpg);
+    background-image: url(../style/button3.jpg);
     background-size: cover;
     background-position: center;
 }

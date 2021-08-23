@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>밤절</title>
+    <link rel="stylesheet" type="text/css" href="../../style/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../style/style-v.css">
+    <script type="text/javascript" src="pages/scripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/ae391fd72f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="mainContainer">
+        <div class="turnPrompt">
+            <div class="turnPromptText">
+                화면을 가로로 돌려주세요.
+            </div>
+        </div>
+        <div id="header"></div>
+        <div id="centerContainer">
+            <div id="leftBlank"></div>
+            <div id="contentContainer">
+                <div id="videoContainer">
+                    <iframe id="contentFrame" class="video" src="p1">로딩중</iframe>
+                </div>
+            </div>
+
+            <div id="rightContainer">
+                <div id="buttonContainer">
+
+                    <!--버튼 연결-->
+                    <a href="index.html">
+                        <div class="button" id="b_home">
+                            <i class="fas fa-home home"></i>
+                        </div>
+                    </a>
+                    <a onclick="openFullscreen();" style="cursor: pointer;">
+                        <div class="button" id="b_fullscreen">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </a>
+                    <div class="button" id="b_back">
+                        <i class="fas fa-arrow-left back"></i>
+                    </div>
+                    <div class="button" id="b_forward">
+                        <i class="fas fa-arrow-right next"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="footer">
+            <div id="copyright">Copyright©2021, 세종특별자치시교육청교육원. All Rights Reserved.</div>
+        </div>
+
+    </div>
+
+    
+
+</body>
+
+</html>
