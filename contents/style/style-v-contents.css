@@ -13,15 +13,6 @@ body {
 	padding : 0;
 	background : url(img.jpg) center center fixed no-repeat;
 }
-/*
-video {
-	position : fixed;
-	top : 0; 
-	left : 0;
-	width : 100%;
-	height : 100%;
-	z-index : -1;
-}*/
 
 /*--요소 정렬을 위한 콘테이너---------------------------*/
 
@@ -80,33 +71,38 @@ video {
 /*--아래부터 화면 등장요소 (과자) -----------------------*/
 .item{
     position: absolute;
-    height: 30%;
-    width: 20%;
-    bottom: 1vh;
-    right: 1vw;
-    margin: 5vh;
+    margin-right: 8vw;
     /*background-color: firebrick;*/
     object-fit: contain;
-    justify-content: right;
-    align-items: right;
-    text-align: right; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 
 #snack{
-    position: relative;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     transition: .3s;
-    transform: rotate(0deg);
-    /*outline: 10px solid red;*/
+    width: 120%;
 }
 
-/*#snack:hover{
-    left: -10%;
-    transform: rotate(10deg);
-    height: 120%;
+#snack:hover{
+
+    filter: drop-shadow(-1pt -10pt 10pt #faffd3) drop-shadow(1pt 10pt 40pt yellow);
+    
 }
-*/
-#button{
-    width: 100%;
+
+#nextButton{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s;
+    width: 120%;
+}
+
+#nextButton:hover{
+    filter: drop-shadow(-1pt -10pt 10pt #faffd3) drop-shadow(1pt 10pt 40pt yellow);
+    cursor:pointer;
 }

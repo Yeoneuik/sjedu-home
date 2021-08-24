@@ -1,0 +1,160 @@
+/*--아래부터 헤더, 푸터, 왼공백, 오른쪽 버튼영역-----------------*/
+body{
+    display: block;
+}
+
+#mainContainer{
+    background-image:url(source/background_forest.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: cadetblue;
+}
+
+#header{
+    /*background-color: aquamarine;
+    opacity: 0%;*/
+    width: 100vw;
+    height: 15vh;
+    
+}
+
+#footer{
+    /*background-color: aqua;*/
+    width: 100vw;
+    height: 15vh;
+    /*opacity: 0%;*/
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#copyright{
+    width: auto;
+    height: auto;
+    color: darkgreen;
+}
+
+#leftBlank{
+    width: 15vw;
+    height: 70vh;
+}
+
+#centerContainer{
+    display: flex;
+}
+
+/*--아래부터 버튼관련-----------------------*/
+
+#rightContainer{
+
+    width: 15vw;
+    height: 70vh;
+}
+
+#buttonContainer{
+    width: 76px;
+    height: 284px;
+}
+
+.button{
+    display: inherit;
+    float: left;
+    width: 46px;
+    height: 46px;
+    margin:  0 0 20px 20px;
+    background-color: darkgoldenrod;
+    border: 5px solid white;
+    border-radius: 5px;
+    filter: drop-shadow(0 5px 0 lightslategray);
+}
+
+.button:hover{
+    background-color: yellow;
+}
+
+#b_home{
+    background-color: darkred;
+}
+
+#b_fullscreen{
+    background-color: darkgreen;
+}
+
+#b_home:hover{
+    background-color: orangered;
+}
+
+#b_fullscreen:hover{
+    background-color: lawngreen;
+}
+
+#b_back, #b_forward {
+    display: none;
+}
+
+i{
+    font-size: 26px;
+    color:white;
+    margin:11px 9px;
+}
+
+.fa-expand{
+    margin: 11px 0px 8px 12px
+    
+}
+
+.back{
+    margin: 11px 0px 9px 12px;
+}
+
+.next{
+    margin: 11px 12px 9px 12px;
+}
+
+i:hover{
+    color: white;
+}
+
+/*--아래부터 콘텐츠 컨테이너, 비디오-----------------------*/
+
+#contentContainer{
+    background-color: wheat;
+    width: 70vw;
+    height: 70vh;
+    border-radius: 20px;
+    filter: drop-shadow(0 15px 0 sandybrown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#videoContainer{
+    margin: 0px;
+    width: 65vw;
+    height: 65vh;
+}
+
+.video{
+    /*background-color: black;*/
+    width: 100%;
+    height: 100%;
+    filter: none;
+    /*border-radius: 20px;*/
+}
+
+/*--아래부터 화면 등장요소 (과자) -----------------------*/
+.item{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20vh;
+    left: auto;
+    width: 200px;
+    height: 215px;
+    z-index: 100;
+    background-color: firebrick;
+    opacity: 50%;
+    
+}
