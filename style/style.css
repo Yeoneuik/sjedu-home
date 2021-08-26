@@ -82,8 +82,8 @@ body{
 }
 
 #unready{
+    /*visibility: hidden;*/
     filter:  sepia(50%) drop-shadow(0 7px 0 #d0694d);
-    
     background-image: url(img/notReady.jpg);
     background-size: cover;
     background-position: center;

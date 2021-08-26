@@ -1,0 +1,98 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+}
+
+body {
+	margin : 0;
+	padding : 0;
+}
+
+/*--요소 정렬을 위한 콘테이너---------------------------*/
+
+.centerContainer{
+    position : fixed;
+	top : 0; 
+	left : 0;
+	width : 100%;
+    height: 100%;
+    background-color:antiquewhite;
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*--이미지 클래스--------------------------------------*/
+
+#bg {
+    position: absolute;
+    background-image: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: min(100%, 100vw * 9 / 16);
+    width: min(100%, 100vh * 16 / 9);
+}
+
+/*--아래부터 화면 등장요소 (과자) -----------------------*/
+#answerBox {
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    height: 30%;
+    aspect-ratio: 2615/1253;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.answerContainer > div {
+    width: 100%;
+    height: 100%;
+}
+
+.objContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 14%;
+    width: calc(60% + 60px);
+}
+
+.item:hover{
+    cursor: grab;
+}
+
+#endedDialog {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    display: none;
+}
+
+#endedDialog:hover {
+    filter: drop-shadow(0 0 0.75rem yellow);
+}
+
+#endedFocus {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+    z-index: 1;
+    display: none;
+}
