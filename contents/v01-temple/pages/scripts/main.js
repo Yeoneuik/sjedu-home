@@ -71,6 +71,7 @@ function startGame() {
 // Public Function
 // Move to next video contents
 function nextContent() {
+    nowGaming = null;
     nowPlaying++;
     if (nowPlaying >= contents.length) {
         location.href = "index.html";
@@ -82,11 +83,12 @@ function nextContent() {
 // Public Function
 // Move to previous video contents
 function prevContent() {
-    if (nowPlaying > 0) {
+    if (nowGaming != null) {
+        nowGaming = null;
+    } else if (nowPlaying > 0) {
         nowPlaying--;
-        var iframe = document.getElementById('contentFrame');
-        iframe.src = contents[nowPlaying].src;
-    }
+    } else return;
+    setIframe(contents[nowPlaying].src);
 }
 
 // 아래는 시스템 이외의것들
