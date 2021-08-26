@@ -2,73 +2,35 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <title>시장에 가면</title>
+        <title>마을배움터 고택편 하위 콘텐츠 선택페이지</title>
         <link rel="stylesheet" type="text/css" href="../../style/normalize.css">
-        <link rel="stylesheet" type="text/css" href="../style/style-vr.css">
-        <script type="text/javascript" src="../../scripts/no-ie.js"></script>
+        <link rel="stylesheet" type="text/css" href="../style/style-index.css">
         <script src="https://kit.fontawesome.com/ae391fd72f.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../../scripts/no-ie.js"></script>
+        
     </head>
-    <body>    
-      <div id="mainContainer">
-        <div class="turnPrompt">
+    <body>
+    <div class="turnPrompt">
             <div class="turnPromptText">
                 화면을 가로로 돌려주세요.
             </div>
         </div>
-         <div id="header"></div>
-         <div id="centerContainer">
-             <div id="leftBlank"></div>
-             <div id="contentContainer">
-             <div id="videoContainer">
-                 <iframe class="video" src="vr/vr-3-content.html">로딩중</iframe>
-
-             </div>
-             </div>
-             
-             <div id="rightContainer">
-                 <div id="buttonContainer">
-
-                     <!--버튼 연결-->
-                     <a href="../index.html"><div class="button" id="b_home">
-                     <i class="fas fa-home home"></i>
-                     </div></a>
-                      <a onclick="openFullscreen();" style="cursor: pointer;"><div class="button" id="b_fullscreen">
-                     <i class="fas fa-expand"></i>
-                     </div></a>
-                     <div class="button" id="b_back">
-                     <i class="fas fa-arrow-left back"></i>
-                     </div>
-                 <div class="button" id="b_forward">
-                     <i class="fas fa-arrow-right next"></i>
-                 </div>
-                 </div>
-                 
-             </div>
-             
-         </div>
-        <div id="footer">
-         <div id="copyright">Copyright©2021, 세종특별자치시교육청교육원. All Rights Reserved.</div>
-         </div>
-          
-      </div>
-      
-       <!---풀스크린을 가능케하는 스크립트--->
-       <script>
-           var elem = document.getElementById("videoContainer");
-           function openFullscreen() {
-               if (elem.requestFullscreen) {
-                   elem.requestFullscreen();
-               } else if (elem.mozRequestFullScreen) { /* Firefox */
-                   elem.mozRequestFullScreen();
-               } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-                elem.webkitRequestFullscreen();
-              } else if (elem.msRequestFullscreen) { /* IE/Edge */
-                elem.msRequestFullscreen();
-              }
-            }
-        </script>
-        
-       
-    </body>
     
+    <div id="header">
+    <img id="title-illust" src="assets/img/title-illust.png" alt="마을배움터 고택편"></div>
+    <div id="middle">
+       
+        <div class="gap"></div>
+        <div id="centerContainer">
+           <a href="../../index.html"><div id="button_home"><i class="fas fa-home home"></i></div></a>
+            <a href="intro.html"><div class="contentButton Bt1"></div></a>
+            <a href="main.html"><div class="contentButton Bt2"></div></a>
+            <a href="questions.html"><div class="contentButton Bt3"></div></a>
+        </div>
+        <div class="gap"></div>
+    </div>
+    
+    <div id="footer"><div id="copyright">Copyright©2021, 세종특별자치시교육청교육원. All Rights Reserved.</div></div>
+    
+    </body>
 </html>
