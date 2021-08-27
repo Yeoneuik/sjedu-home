@@ -29,12 +29,43 @@ body {
     text-align: center;
 }
 
+
+/*--로딩중 클래스--------------------------------------*/
+
+.loading {
+    position: absolute;
+    width : 100%;
+    height: 100%;
+	z-index : 10;
+    background-color: gray;
+}
+
+.box-loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-loading {
+    height: 25pt;
+    width: auto;
+    display: inline-block;
+    margin-right: 10pt;
+}
+
+.text-loading {
+    font-size: 30pt;
+    display: inline-block;
+}
+
+
 /*--이미지 클래스--------------------------------------*/
 
 #bg {
-    background-image: url('../assets/img/background.jpg');
+    /*background-image: url('../assets/img/background.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
     background-position: center;
     height: 100%;
     width: 100%;
@@ -44,36 +75,13 @@ body {
 
 .item_lottie{
     /*border: solid firebrick;*/
-    position:absolute;
-    height: 25%;
-    width: 25%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .item_lottie{
     cursor: pointer;
 }
 
-#dish01{
-    top: 37%;
-    left: 10%;
-}
-
-#dish02{
-    top: 55%;
-    left: 25%;
-}
-
-#dish03{
-    top: 30%;
-    left: 36%;
-}
-
-#dish04{
-    top: 55%;
-    left: 50%;
-}
-
-#dish05{
-    top: 36%;
-    left: 65%;
+#interaction01{
 }

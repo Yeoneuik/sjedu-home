@@ -68,6 +68,7 @@ function rightAnswer(i) {
         setTimeout(function () {
             document.getElementById("endedDialog").style.display = "block";
             document.getElementById("endedFocus").style.display = "block";
+            parent.nextContent();
         }, 2000)
     }
 }

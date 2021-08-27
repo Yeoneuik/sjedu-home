@@ -48,7 +48,7 @@ function isEnded() {
 function rightAnswer(i) {
     console.log("Right Answer!");
 
-    var right = new Audio('assets/sound/right.mp3');
+    var right = new Audio('assets/sound/fire-right.wav');
     right.currentTime = 0.2;
     right.play();
     right.remove();
@@ -60,10 +60,17 @@ function rightAnswer(i) {
     answerBox.style.backgroundImage = 'url("' + ansTable.srcAnswer[ansTable.filled-1] + '")';
     
     if (isEnded()) {
+        var talk = new Audio('assets/sound/talk.wav');
+        setTimeout(function(){
+            console.log("It's warm!");
+            talk.play();
+            talk.remove();
+        },500)
         setTimeout(function () {
             document.getElementById("endedDialog").style.display = "block";
             document.getElementById("endedFocus").style.display = "block";
-        }, 2000)
+            parent.nextContent();
+        }, 4700)
     }
 }
 
@@ -188,6 +195,7 @@ window.onload = function () {
     }
 
     document.getElementById("endedDialog").onclick = parent.nextContent;
+    
 }
 
 
