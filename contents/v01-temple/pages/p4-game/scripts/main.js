@@ -93,4 +93,6 @@ window.onload = function() {
         anim05.goToAndPlay(0, true);
         setTimeout(() => dish02Sound.play(), 0);
     }
+     
+     document.getElementById('nextBtn').onclick = parent.nextContent;
 }

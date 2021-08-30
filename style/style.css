@@ -13,18 +13,22 @@ body{
 #header{
     /*background-color: cadetblue;*/
     width: inherit;
+    min-height: 230px;
     height: 25vh;
     font-size: 20pt;
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     justify-content: center;
 }
 
 #title-illust{
-    width: 60vw;
-    max-width: 700px;
-    margin-top: 9vh;
-    margin-bottom: 1vh
+    height: 80%;
+    /*min-height: 130px;*/
+    max-height: 200px;
+    /*width: 60vw;
+    max-width: 700px;*/
+    margin-top: 7vh;
+    margin-bottom: 3vh
 }
 
 #middle{

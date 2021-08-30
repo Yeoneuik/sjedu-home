@@ -77,3 +77,16 @@ body {
     top: 40%;
     left: 10%;
 }
+
+
+#nextBtn {
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+    width: 15%;
+}
+
+#nextBtn:hover {
+    filter: drop-shadow(0 0 3px yellow);
+    cursor: pointer;
+}
