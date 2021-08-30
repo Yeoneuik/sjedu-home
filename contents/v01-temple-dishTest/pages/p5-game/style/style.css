@@ -1,0 +1,142 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+}
+
+body {
+	margin : 0;
+	padding : 0;
+}
+
+/*--요소 정렬을 위한 콘테이너---------------------------*/
+
+.centerContainer{
+    position : fixed;
+	top : 0; 
+	left : 0;
+	width : 100%;
+    height: 100%;
+    background-color:antiquewhite;
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*--이미지 클래스--------------------------------------*/
+
+#bg {
+    background-image: url('../assets/img/bam-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+/*--아래부터 화면 등장요소 (과자) -----------------------*/
+
+.item {
+    width: calc(80vw * 217 / 1570);
+}
+
+.itemAnswer {
+    opacity: 20%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.itemObj:hover{
+    cursor: grab;
+}
+
+.answerContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    width: 45vw;
+    height: 16vw;
+
+    background-image: url('../assets/img/bam-answer.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#answer0 {
+    position: absolute;
+    top: 46%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+}
+
+#answer1 {
+    position: absolute;
+    top: 46%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+}
+
+.objContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80vw;
+    height: 20vw;
+}
+
+#objBackground {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80vw;
+    z-index: 1;
+}
+
+.objBox {
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 2;
+    width: calc(80vw * 1350 / 1570);
+}
+
+#endedDialog {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    display: none;
+}
+
+#endedDialog:hover {
+    filter: drop-shadow(0 0 0.75rem yellow);
+}
+
+#endedFocus {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+    z-index: 1;
+    display: none;
+}

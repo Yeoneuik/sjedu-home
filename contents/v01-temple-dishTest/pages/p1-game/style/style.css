@@ -1,0 +1,87 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+}
+
+body {
+	margin : 0;
+	padding : 0;
+    
+}
+
+/*--요소 정렬을 위한 콘테이너---------------------------*/
+
+.centerContainer{
+    position : fixed;
+	top : 0; 
+	left : 0;
+	width : 100%;
+    height: 100%;
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/*--로딩중 클래스--------------------------------------*/
+
+.loading {
+    position: absolute;
+    width : 100%;
+    height: 100%;
+	z-index : 10;
+    background-color: gray;
+}
+
+.box-loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-loading {
+    height: 25pt;
+    width: auto;
+    display: inline-block;
+    margin-right: 10pt;
+}
+
+.text-loading {
+    font-size: 30pt;
+    display: inline-block;
+}
+
+
+/*--이미지 클래스--------------------------------------*/
+
+#bg {
+    /*background-image: url('../assets/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+/*--아래부터 화면 등장요소 -----------------------*/
+
+.item_lottie{
+    /*border: solid firebrick;*/
+    height: 100vh;
+    width: 100vw;
+}
+
+.item_lottie{
+    cursor: pointer;
+}
+
+#interaction01{
+}
