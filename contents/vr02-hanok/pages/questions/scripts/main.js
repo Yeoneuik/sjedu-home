@@ -25,7 +25,7 @@ window.onload = function() {
         renderer: "svg",
         loop: false,
         autoplay: false,
-        path: 'https://assets9.lottiefiles.com/packages/lf20_qccjf8g5.json'
+        path: 'https://assets10.lottiefiles.com/packages/lf20_crqewfsi.json'
     })
     
     q01Sound = new Audio('assets/audio/q01.wav');
