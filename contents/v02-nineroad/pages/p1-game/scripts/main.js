@@ -1,97 +1,71 @@
-window.onload = function() {
-    var dish01 = document.getElementById("dish01");
-    var dish02 = document.getElementById("dish02");
-    var dish03 = document.getElementById("dish03");
-    var dish04 = document.getElementById("dish04");
-    var dish05 = document.getElementById("dish05");
-
-    var anim01 = lottie.loadAnimation( {
-        container: dish01,
-        renderer: "svg",
-        loop: false,
-        autoplay: false,
-        path: 'https://assets4.lottiefiles.com/packages/lf20_qrtdremd.json'
-    })
-    
-    var anim02 = lottie.loadAnimation( {
-        container: dish02,
-        renderer: "svg",
-        loop: false,
-        autoplay: false,
-        path: 'https://assets9.lottiefiles.com/packages/lf20_cspd053x.json'
-    })
-    
-    var anim03 = lottie.loadAnimation( {
-        container: dish03,
-        renderer: "svg",
-        loop: false,
-        autoplay: false,
-        path: 'https://assets1.lottiefiles.com/packages/lf20_kb27pjvk.json'
-    })
-    
-    var anim04 = lottie.loadAnimation( {
-        container: dish04,
-        renderer: "svg",
-        loop: false,
-        autoplay: false,
-        path: 'https://assets5.lottiefiles.com/packages/lf20_sdh3vhwa.json'
-    })
-    
-    var anim05 = lottie.loadAnimation( {
-        container: dish05,
-        renderer: "svg",
-        loop: false,
-        autoplay: false,
-        path: 'https://assets4.lottiefiles.com/packages/lf20_llltv8t0.json'
-    })
-
-    dish01Sound = new Audio('assets/magicChime_pitchUp.mp3');
-    dish02Sound = new Audio('assets/magicChime_original.mp3');
-
-
-    anim01.setSpeed(1);
-
-    // 호버시 재생
-    // book.addEventListener('mouseenter', function() {
-    //     anim.play();
-    // })
-
-    // book.addEventListener('mouseleave', function() {
-    //     anim.stop()
-    // })
-
-    dish01.onclick = function() {
-        dish01Sound.pause();
-        dish01Sound.currentTime = 0;
-        anim01.goToAndPlay(0, true);
-        setTimeout(() => dish01Sound.play(), 0);
+var anims = {
+    ja: { //장구
+        anim: null,
+        obj: null,
+        sound: null,
+        delay: 850,
+        timeout: null
+    },
+    kk: { //꽹과리
+        anim: null,
+        obj: null,
+        sound: null,
+        delay: 800,
+        timeout: null
+    },
+    ji: { //징
+        anim: null,
+        obj: null,
+        sound: null,
+        delay: 850,
+        timeout: null
+    },
+    yo: { //용고
+        anim: null,
+        obj: null,
+        sound: null,
+        delay: 660,
+        timeout: null
     }
-    
-     dish02.onclick = function() {
-        dish02Sound.pause();
-        dish02Sound.currentTime = 0;
-        anim02.goToAndPlay(0, true);
-        setTimeout(() => dish02Sound.play(), 0);
+}
+
+window.onload = function () {
+    for (let [id, obj] of Object.entries(anims)) {
+        obj.obj = document.getElementById(id);
+        obj.anim = lottie.loadAnimation({
+            container: obj.obj,
+            renderer: "svg",
+            loop: false,
+            autoplay: false,
+            path: 'assets/' + id + '/data.json'
+        });
+
+        obj.sound = new Audio('assets/' + id + '/sound.wav');
+        obj.anim.setSpeed(1.5);
+
+        obj.obj.onclick = function () {
+            obj.sound.pause();
+            obj.sound.currentTime = 0;
+            
+            obj.anim.goToAndPlay(0, true);
+            if(obj.timeout != null) {
+                clearTimeout(obj.timeout);
+            } 
+            obj.timeout = setTimeout(() => {
+                obj.sound.play();
+                obj.timeout = null;
+            }, obj.delay / 1.5);
+        }
     }
-     
-     dish03.onclick = function() {
-        dish02Sound.pause();
-        dish02Sound.currentTime = 0;
-        anim03.goToAndPlay(0, true);
-        setTimeout(() => dish02Sound.play(), 0);
-    }
-     
-     dish04.onclick = function() {
-        dish01Sound.pause();
-        dish01Sound.currentTime = 0;
-        anim04.goToAndPlay(0, true);
-        setTimeout(() => dish01Sound.play(), 0);
-    }
-     
-     dish05.onclick = function() {
-        dish02Sound.pause();
-        dish02Sound.currentTime = 0;
-        anim05.goToAndPlay(0, true);
-        setTimeout(() => dish02Sound.play(), 0);
-    }
+
+    var title = document.getElementById('title');
+    var titleAnim = lottie.loadAnimation({
+        container: title,
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path: 'assets/title/data.json'
+    })
+
+    document.getElementById('nextBtn').onclick = parent.nextContent;
 }
