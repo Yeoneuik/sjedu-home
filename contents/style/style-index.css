@@ -128,25 +128,25 @@ i{
 
 #copyright{
     width: auto;
-    color: darkgreen;
+    color: darkslategray;
 }
 .Bt1{
     transition: .1s ease-in;
-    background-image: url(../style/button1.jpg);
+    background-image: url(../style/button1_new.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .Bt2{
     transition: .1s ease-in;
-    background-image: url(../style/button2.jpg);
+    background-image: url(../style/button2_new.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .Bt3{
     transition: .1s ease-in;
-    background-image: url(../style/button3.jpg);
+    background-image: url(../style/button3_new.jpg);
     background-size: cover;
     background-position: center;
 }
