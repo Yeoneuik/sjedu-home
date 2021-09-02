@@ -21,7 +21,7 @@ const contents = [
     {
         src: 'pages/p4/index.html',
         game: [
-            
+            'pages/p3-game2/index.html'
         ]
     }
 ]
