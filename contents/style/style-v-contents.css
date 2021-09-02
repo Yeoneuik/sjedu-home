@@ -107,3 +107,7 @@ body {
     filter: drop-shadow(-1pt -10pt 10pt #faffd3) drop-shadow(1pt 10pt 40pt yellow);
     cursor:pointer;
 }
+
+#button:hover{
+    cursor:pointer;
+}
