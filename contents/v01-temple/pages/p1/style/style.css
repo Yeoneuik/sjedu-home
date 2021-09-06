@@ -14,8 +14,7 @@
     bottom: 1vh;
     right: 1vw;
     margin: 5vh;
-    /*background-color: firebrick;*/
-    object-fit: contain;
+    /*background-color: firebrick;*/    object-fit: contain;
     justify-content: right;
     align-items: right;
     text-align: right; 

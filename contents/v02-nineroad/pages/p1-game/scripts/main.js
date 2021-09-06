@@ -3,14 +3,14 @@ var anims = {
         anim: null,
         obj: null,
         sound: null,
-        delay: 850,
+        delay: 700,
         timeout: null
     },
     kk: { //꽹과리
         anim: null,
         obj: null,
         sound: null,
-        delay: 800,
+        delay: 750,
         timeout: null
     },
     ji: { //징
@@ -24,7 +24,7 @@ var anims = {
         anim: null,
         obj: null,
         sound: null,
-        delay: 660,
+        delay: 260,
         timeout: null
     }
 }

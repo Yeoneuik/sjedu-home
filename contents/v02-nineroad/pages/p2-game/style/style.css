@@ -11,6 +11,7 @@ html {
 body {
 	margin : 0;
 	padding : 0;
+    
 }
 
 /*--요소 정렬을 위한 콘테이너---------------------------*/
@@ -21,7 +22,6 @@ body {
 	left : 0;
 	width : 100%;
     height: 100%;
-    background-color:antiquewhite;
     opacity: 100%;
     display: flex;
     justify-content: center;
@@ -32,67 +32,58 @@ body {
 /*--이미지 클래스--------------------------------------*/
 
 #bg {
-    position: absolute;
-    background-image: url('../assets/background.jpg');
+    
+    background-image: url('../assets/img/background.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    height: min(100%, 100vw * 9 / 16);
-    width: min(100%, 100vh * 16 / 9);
-}
-
-/*--아래부터 화면 등장요소 (과자) -----------------------*/
-#answerBox {
-    position: absolute;
-    bottom: 14%;
-    left: 50%;
-    transform: translate(-50%, 0);
-
-    height: 30%;
-    aspect-ratio: 2615/1253;
-
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.answerContainer > div {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
-.objContainer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 14%;
-    width: calc(60% + 60px);
+/*--아래부터 화면 등장요소 -----------------------*/
+
+.item_lottie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*border: solid firebrick;*/
+    height: 50%;
+    
 }
 
-.item:hover{
-    cursor: grab;
+.item_lottie:hover{
+    cursor: pointer;
 }
 
-#endedDialog {
-    position: absolute;
-    z-index: 10;
+#interaction01{
+    background-image: url(../assets/img/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    top: 0%;
+    left: 0%;
+    
+}
+
+#interaction02{
+    background-image: url(../assets/img/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30vw;
-    display: none;
+    left: 0%;
 }
 
-#endedDialog:hover {
-    filter: drop-shadow(0 0 0.75rem yellow);
-}
-
-#endedFocus {
+#nextBtn {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 50%;
-    z-index: 1;
-    display: none;
+    bottom: 2%;
+    right: 1%;
+    width: 15%;
+}
+
+#nextBtn:hover {
+    filter: drop-shadow(0 0 3px yellow);
+    cursor: pointer;
 }
