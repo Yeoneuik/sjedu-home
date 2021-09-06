@@ -27,3 +27,7 @@
     grid-column: 7 / 8;
     bottom: 0;
 }
+
+.inst:hover{
+    cursor: pointer;
+}
