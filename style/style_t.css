@@ -1,0 +1,135 @@
+/*--작성코드 시작-----------------------------*/
+body{
+    display:block;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    width: 100%;
+    /*background-color: #F1dF81;*/
+    background-color: black;
+    /*background-image: url(img/background.jpg);*/
+}
+
+#header{
+    /*background-color: cadetblue;*/
+    width: inherit;
+    min-height: 230px;
+    height: 28vh;
+    font-size: 20pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title-illust{
+    height: 80%;
+    /*min-height: 130px;*/
+    max-height: 200px;
+    /*width: 60vw;
+    max-width: 700px;*/
+    margin-top: 7vh;
+    margin-bottom: 3vh
+}
+
+#middle{
+    /*background-color: cadetblue;*/
+    display: flex;
+    min-height: 57vh;
+
+}
+
+.gap{
+    /*background-color: cadetblue;*/
+    width: 10vw;
+}
+
+#centerContainer{
+    justify-content: center;
+    align-items:center;
+    /*background-color: cadetblue;*/
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#footer{
+    /*background-color: cadetblue;*/
+    height:15vh;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentButton{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #E5E5E5;
+    width: 330px;
+    height: 230px;
+    margin: 10px;
+    outline-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0 7px 0 gray);
+    border: 7px solid white;
+    box-shadow: inset .05px .05px 20px rgba(85, 95, 118, .5);
+    
+}
+
+.contentButton:hover{
+    transition: .1s ease-in;
+    height: 240px;
+    margin: 0 10px;
+    filter: drop-shadow(0 0px 30px #FFE576) drop-shadow(0 7px 0 #FFE576) ;
+}
+
+#unready{
+    /*visibility: hidden;*/
+    filter: sepia(50%) drop-shadow(0 7px 0 #d0694d);
+    /*background-image: url(img/notReady.jpg);*/
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#unready:hover{
+    cursor: not-allowed;
+    height: 230px;
+    margin: 10px;
+    box-shadow: inset 1px 1px 100px #999999;
+}
+
+#copyright{
+    width: auto;
+    color: darkslategray;
+}
+.Bt1{
+    transition: .1s ease-in;
+    background-image: url(img/title_3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Bt2{
+    transition: .1s ease-in;
+    background-image: url(img/title_4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Bt7{
+    transition: .1s ease-in;
+    background-image: url(img/title_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Bt8{
+    transition: .1s ease-in;
+    background-image: url(img/title_1.jpg);
+    background-size: cover;
+    background-position: center;
+}
