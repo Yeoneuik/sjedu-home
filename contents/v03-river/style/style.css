@@ -1,0 +1,8 @@
+body{
+    /*background-image: url(background_edited.jpg);*/
+    background-size: cover;
+    height: 100vh;
+    background-repeat:no-repeat;
+    background-color: #0F78BC;
+    background-position: center;
+}

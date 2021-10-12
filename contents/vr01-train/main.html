@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>우리 마을 기차역으로 놀러가요! 재미 퐁퐁!</title>
+        <link rel="stylesheet" type="text/css" href="../../style/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../style/style-vr.css">
+        <script type="text/javascript" src="../../scripts/no-ie.js"></script>
+        <script src="https://kit.fontawesome.com/ae391fd72f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>    
+      <div id="mainContainer">
+        <div class="turnPrompt">
+            <div class="turnPromptText">
+                화면을 가로로 돌려주세요.
+            </div>
+        </div>
+         <div id="header"></div>
+         <div id="centerContainer">
+             <div id="leftBlank"></div>
+             <div id="contentContainer">
+             <div id="videoContainer">
+                 <iframe class="video" src="pages/main-content.html">로딩중</iframe>
+
+             </div>
+             </div>
+             
+             <div id="rightContainer">
+                 <div id="buttonContainer">
+
+                     <!--버튼 연결-->
+                     <a href="../vr01-train/index.html"><div class="button" id="b_home">
+                     <i class="fas fa-home home"></i>
+                     </div></a>
+                      <a onclick="openFullscreen();" style="cursor: pointer;"><div class="button" id="b_fullscreen">
+                     <i class="fas fa-expand"></i>
+                     </div></a>
+                     <div class="button" id="b_back">
+                     <i class="fas fa-arrow-left back"></i>
+                     </div>
+                 <div class="button" id="b_forward">
+                     <i class="fas fa-arrow-right next"></i>
+                 </div>
+                 </div>
+                 
+             </div>
+             
+         </div>
+        <div id="footer">
+         <div id="copyright">Copyright©2021, 세종특별자치시교육청교육원 유아교육부. All Rights Reserved.</div>
+         </div>
+          
+      </div>
+      
+       <!---풀스크린을 가능케하는 스크립트--->
+       <script>
+           var elem = document.getElementById("videoContainer");
+           function openFullscreen() {
+               if (elem.requestFullscreen) {
+                   elem.requestFullscreen();
+               } else if (elem.mozRequestFullScreen) { /* Firefox */
+                   elem.mozRequestFullScreen();
+               } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                elem.webkitRequestFullscreen();
+              } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+              }
+            }
+        </script>
+        
+       
+    </body>
+    
+</html>

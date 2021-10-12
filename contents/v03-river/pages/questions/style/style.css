@@ -1,0 +1,79 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+}
+
+body {
+	margin : 0;
+	padding : 0;
+    background-color: mediumseagreen;
+    
+}
+
+/*--요소 정렬을 위한 콘테이너---------------------------*/
+
+.centerContainer{
+    position : relative;
+	width : 100%;
+    height: 100%;
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*--이미지 클래스--------------------------------------*/
+
+#bg {
+
+    /*background-image: url('../assets/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+    
+    height: 100%;
+    width: 100%;
+
+
+}
+
+/*--아래부터 화면 등장요소 -----------------------*/
+
+#title{
+    display: flex;
+    margin-bottom: 5vh;
+}
+
+#title_cont{
+    height: 10vh;
+}
+
+.item_lottie{
+    
+    /*border: solid firebrick;*/
+    cursor: pointer;
+    height: 15vh;
+    margin-top: 3vh;
+}
+
+#q01{
+    
+}
+
+#q02{
+    
+}
+
+#q03{
+    
+}
+
+#q04{
+    
+}

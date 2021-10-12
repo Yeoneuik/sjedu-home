@@ -14,7 +14,7 @@ body{
     /*background-color: cadetblue;*/
     width: inherit;
     min-height: 230px;
-    height: 25vh;
+    height: 28vh;
     font-size: 20pt;
     /*display: flex;*/
     align-items: center;
@@ -34,7 +34,7 @@ body{
 #middle{
     /*background-color: cadetblue;*/
     display: flex;
-    min-height: 60vh;
+    min-height: 57vh;
 
 }
 
@@ -87,8 +87,8 @@ body{
 
 #unready{
     /*visibility: hidden;*/
-    filter:  sepia(50%) drop-shadow(0 7px 0 #d0694d);
-    background-image: url(img/notReady.jpg);
+    filter: sepia(50%) drop-shadow(0 7px 0 #d0694d);
+    /*background-image: url(img/notReady.jpg);*/
     background-size: cover;
     background-position: center;
     
@@ -121,12 +121,40 @@ body{
 
 .Bt3{
     transition: .1s ease-in;
-    background-image: url(img/title_2.jpg);
+    background-image: url(img/title_5.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .Bt4{
+    transition: .1s ease-in;
+    background-image: url(img/title_6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Bt5{
+    transition: .1s ease-in;
+    background-image: url(img/title_7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Bt6{
+    transition: .1s ease-in;
+    background-image: url(img/title_8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Bt7{
+    transition: .1s ease-in;
+    background-image: url(img/title_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Bt8{
     transition: .1s ease-in;
     background-image: url(img/title_1.jpg);
     background-size: cover;

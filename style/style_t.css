@@ -120,6 +120,34 @@ body{
     background-position: center;
 }
 
+.Bt3{
+    transition: .1s ease-in;
+    background-image: url(img/title_5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Bt4{
+    transition: .1s ease-in;
+    background-image: url(img/title_6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Bt5{
+    transition: .1s ease-in;
+    background-image: url(img/title_7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Bt6{
+    transition: .1s ease-in;
+    background-image: url(img/title_8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .Bt7{
     transition: .1s ease-in;
     background-image: url(img/title_2.jpg);
