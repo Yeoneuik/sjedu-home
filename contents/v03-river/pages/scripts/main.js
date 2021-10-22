@@ -2,14 +2,13 @@
 const contents = [
     {
         src: 'pages/p1/index.html',
-        game: [
-            'pages/p1-game/index.html'
-        ]
+        game: []
     },
     {
         src: 'pages/p2/index.html',
         game: [
-            'pages/p2-game/index.html'
+            'pages/p2-game/index.html',
+            'pages/p2-game2/index.html'
         ]
     },
     {
@@ -33,8 +32,24 @@ const contents = [
     {
         src: 'pages/p6/index.html',
         game: [
-            
+            'pages/p6-game/index.html'
         ]
+    },
+    {
+        src: 'pages/p7/index.html',
+        game: [
+            'pages/p7-game/index.html'
+        ]
+    },
+    {
+        src: 'pages/p8/index.html',
+        game: [
+            'pages/p8-game/index.html'
+        ]
+    },
+    {
+        src: 'pages/p9/index.html',
+        game: []
     }
 ]
 

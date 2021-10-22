@@ -33,7 +33,7 @@ body {
 
 #bg {
     position: absolute;
-    background-image: url('../assets/background.jpg');
+    background-image: url('../assets/img/bg.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -42,57 +42,59 @@ body {
 }
 
 /*--아래부터 화면 등장요소 (과자) -----------------------*/
-#answerBox {
-    position: absolute;
-    bottom: 14%;
-    left: 50%;
-    transform: translate(-50%, 0);
 
+.tori {
+    width: 20%;
     height: 30%;
-    aspect-ratio: 2615/1253;
-
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    position: absolute;
 }
 
-.answerContainer > div {
+.tori > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+}
+
+.tori:hover > img {
+    display: block;
+}
+
+.tori > lottie-player {
+    position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.objContainer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 14%;
-    width: calc(60% + 60px);
+.tori:hover > lottie-player {
+    display: none;
 }
 
-.item:hover{
-    cursor: grab;
+#click1 {
+    top: 35%;
+    left: 10%;
 }
 
-#endedDialog {
-    position: absolute;
-    z-index: 10;
-    top: 50%;
+#click2 {
+    top: 63%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30vw;
-    display: none;
 }
 
-#endedDialog:hover {
-    filter: drop-shadow(0 0 0.75rem yellow);
+#click3 {
+    top: 22%;
+    right: 8%;
+    height: 25%;
 }
 
-#endedFocus {
+#ctnbtn {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 50%;
-    z-index: 1;
-    display: none;
+    right: 1%;
+    bottom: 1%;
+    width: 25%;
+}
+
+#ctnbtn:hover {
+    filter: drop-shadow(1pt 10pt 40pt yellow)
+            drop-shadow(-1pt -10pt 10pt #faffd3);
+    cursor: pointer;
 }
