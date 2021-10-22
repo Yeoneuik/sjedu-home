@@ -4,32 +4,21 @@
         <meta charset="UTF-8">
         <title>밤절 내부 콘텐츠 1 인터렉션</title>
         <link rel="stylesheet" type="text/css" href="style/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.14/lottie.min.js" type="text/javascript"></script>
+        <link rel="preload" as="image" href="assets/img/bg2.png">
         <script type="text/javascript" src="scripts/modernizr.js"></script>
         <script type="text/javascript" src="scripts/main.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.12/lottie.min.js" integrity="sha512-Dr2QERtNqLw0I06FR7G73CjiWvR4roRMDNTbOGp+qeGhVjEl0xs4AKZzqVFREqdOL3t8ei7H9y9XUcpYVkwEIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
     </head>
     <body>
         <div class="centerContainer">
             <div id="bg">
-                <div id="endedFocus"></div>
-                <img src="../assets/img/p-01-button-forward.png" id="endedDialog" class="dialog">
-                <div class="answerContainer">
-                    <img id="answer0" class="item itemAnswer" droppable="true">
-                    <img id="answer1" class="item itemAnswer" droppable="true">
-                </div>
-                <div class="objContainer">
-                    <img id="objBackground" src="assets/img/letter-container.svg">
-                    <div class="objBox">
-                        <img id="object0" class="item itemObj" draggable="true">
-                        <img id="object1" class="item itemObj" draggable="true">
-                        <img id="object2" class="item itemObj" draggable="true">
-                        <img id="object3" class="item itemObj" draggable="true">
-                        <img id="object4" class="item itemObj" draggable="true">
-                        <img id="object5" class="item itemObj" draggable="true">
-                    </div>
-                    
-                </div>
+                <img id="leaf" class="btn" src="assets/img/leaf.png">
+                <img id="reed" class="btn" src="assets/img/reed.png">
+                <video class="vid" id="vidLeaf" src="assets/video/leaf.mp4"></video>
+                <video class="vid" id="vidReed" src="assets/video/reed.mp4"></video>
+                <div class="proready" id="progress"></div>
             </div>
-        
+        </div>
     </body>
 </html>

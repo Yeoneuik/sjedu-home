@@ -1,0 +1,105 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+}
+
+body {
+	margin : 0;
+	padding : 0;
+}
+
+/*--요소 정렬을 위한 콘테이너---------------------------*/
+
+.centerContainer{
+    position : fixed;
+	top : 0; 
+	left : 0;
+	width : 100%;
+    height: 100%;
+    background-color:antiquewhite;
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*--이미지 클래스--------------------------------------*/
+
+#bg {
+    background-image: url('../assets/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    height: min(100%, 100vw * 9 / 16);
+    width: min(100%, 100vh * 16 / 9);
+}
+
+/*--아래부터 화면 등장요소 (과자) -----------------------*/
+
+.fish {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.fish:hover {
+    filter: drop-shadow(-1pt -10pt 10pt #faffd3)
+            drop-shadow(1pt 10pt 40pt yellow);
+    cursor: pointer;
+}
+
+#boongu {
+    background-image: url('../assets/img/boongu.png');
+    top: 40%;
+    left: 6%;
+    width: 50%;
+    height: 50%;
+}
+
+#boongu:hover {
+    background-image: url('../assets/img/boongu_hover.png')
+}
+
+#pirami {
+    background-image: url('../assets/img/pirami.png');
+    top: 10%;
+    left: 15%;
+    width: 25%;
+    height: 20%;
+}
+
+#pirami:hover {
+    background-image: url('../assets/img/pirami_hover.png')
+}
+
+#right {
+    background-image: url('../assets/img/right.png');
+    top: 15%;
+    right: 15%;
+    width: 25%;
+    height: 30%;
+}
+
+#right:hover {
+    background-image: url('../assets/img/right_hover.png')
+}
+
+#songsari {
+    background-image: url('../assets/img/songsari.png');
+    top: 60%;
+    right: 5%;
+    width: 23%;
+    height: 25%;
+}
+
+#songsari:hover {
+    background-image: url('../assets/img/songsari_hover.png')
+}

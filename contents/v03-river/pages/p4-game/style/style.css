@@ -32,61 +32,28 @@ body {
 /*--이미지 클래스--------------------------------------*/
 
 #bg {
-    background-image: url('../assets/img/background.jpg');
+    background-image: url('../assets/img/bg.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    height: 100%;
-    width: 100%;
+    position: absolute;
+    height: min(100%, 100vw * 9 / 16);
+    width: min(100%, 100vh * 16 / 9);
 }
 
 /*--아래부터 화면 등장요소 -----------------------*/
 
-.item_lottie{
-    /*border: solid firebrick;*/
-    position:absolute;
-    height: 27vh;
-    width: 27vw;
-}
-
-.item_lottie{
-    cursor: pointer;
-}
-
-#dish01{
-    top: 23%;
-    left: 31%;
-}
-
-#dish02{
-    top: 37%;
-    left: 53%;
-}
-
-#dish03{
-    top: 8%;
-    left: 57%;
-}
-
-#dish04{
-    top: 58%;
-    left: 29%;
-}
-
-#dish05{
-    top: 40%;
-    left: 10%;
-}
-
-
-#nextBtn {
+#kirakira {
+    height: 30%;
+    width: 30%;
+    right: 10%;
+    top: 50%;
     position: absolute;
-    bottom: 2%;
-    right: 1%;
-    width: 15%;
+    transform: translate(0, -50%);
 }
 
-#nextBtn:hover {
-    filter: drop-shadow(0 0 3px yellow);
+#kirakira:hover {
+    filter: drop-shadow(-1pt -10pt 10pt #faffd3)
+            drop-shadow(1pt 10pt 40pt yellow);
     cursor: pointer;
 }
