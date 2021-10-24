@@ -5,10 +5,11 @@ window.onload = function () {
 
 
     video.onended = function() {
-        snack.style.display = "block";
+        /*snack.style.display = "block";
         snack.onclick = parent.startGame;
         button.play();
-        setTimeout(parent.nextContent, 6000);
+        setTimeout(parent.nextContent, 6000);*/
+        parent.startGame();
     }
 
     video.oncanplaythrough = function() {

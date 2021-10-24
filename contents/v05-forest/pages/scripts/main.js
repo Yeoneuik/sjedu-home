@@ -14,27 +14,7 @@ const contents = [
     },
     {
         src: 'pages/p3/index.html',
-        game: [
-            'pages/p3-game/index.html'
-        ]
-    },
-    {
-        src: 'pages/p4/index.html',
-        game: [
-            'pages/p4-game/index.html'
-        ]
-    },
-    {
-        src: 'pages/p5/index.html',
-        game: [
-            'pages/p5-game/index.html'
-        ]
-    },
-    {
-        src: 'pages/p6/index.html',
-        game: [
-            
-        ]
+        game: []
     }
 ]
 

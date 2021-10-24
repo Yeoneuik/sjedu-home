@@ -22,4 +22,9 @@ window.onload = function() {
         console.log('complete fired');
         parent.startGame();
     })
+    
+narr.onended = function() {
+        setTimeout(parent.startGame, 5000);
+    }
+    
 }

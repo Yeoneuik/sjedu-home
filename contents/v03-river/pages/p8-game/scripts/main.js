@@ -37,4 +37,8 @@ window.onload = function() {
             }, 2000);
         }
     }
+    
+    narr.onended = function() {
+        setTimeout(parent.startGame, 5000);
+    }
 }
