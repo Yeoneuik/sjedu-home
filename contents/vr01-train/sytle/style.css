@@ -1,8 +1,8 @@
 body{
-    /*background-image: url(background.jpg);*/
+    background-image: url(background.jpg);
     background-size: cover;
     height: 100vh;
     background-repeat:no-repeat;
-    background-color: #1987C1;
+    background-color: #EDD8C8;
     background-position: center;
 }

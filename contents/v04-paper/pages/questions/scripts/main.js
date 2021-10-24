@@ -9,7 +9,7 @@ window.onload = function() {
         renderer: "svg",
         loop: false,
         autoplay: false,
-        path: 'https://assets9.lottiefiles.com/packages/lf20_fycc7z4n.json'
+        path: 'https://assets6.lottiefiles.com/packages/lf20_drk3gcxc.json'
     })
     
     var anim02 = lottie.loadAnimation( {
@@ -17,7 +17,7 @@ window.onload = function() {
         renderer: "svg",
         loop: false,
         autoplay: false,
-        path: 'https://assets10.lottiefiles.com/packages/lf20_zutnxlad.json'
+        path: 'https://assets2.lottiefiles.com/packages/lf20_byc9sivo.json'
     })
     
     var anim03 = lottie.loadAnimation( {
@@ -25,22 +25,12 @@ window.onload = function() {
         renderer: "svg",
         loop: false,
         autoplay: false,
-        path: 'https://assets9.lottiefiles.com/packages/lf20_kly2qzvs.json'
+        path: 'https://assets10.lottiefiles.com/packages/lf20_tbtjgoig.json'
     })
     
-    var anim04 = lottie.loadAnimation( {
-        container: q04,
-        renderer: "svg",
-        loop: false,
-        autoplay: false,
-        path: 'https://assets7.lottiefiles.com/packages/lf20_v5oxznz5.json'
-    })
-
     q01Sound = new Audio('assets/audio/q01.wav');
     q02Sound = new Audio('assets/audio/q02.wav');
     q03Sound = new Audio('assets/audio/q03.wav');
-    q04Sound = new Audio('assets/audio/q04.wav');
-
 
     anim01.setSpeed(1);
 
@@ -72,13 +62,6 @@ window.onload = function() {
         q03Sound.currentTime = 0;
         anim03.goToAndPlay(0, true);
         setTimeout(() => q03Sound.play(), 0);
-    }
-     
-     q04.onclick = function() {
-        q04Sound.pause();
-        q04Sound.currentTime = 0;
-        anim04.goToAndPlay(0, true);
-        setTimeout(() => q04Sound.play(), 0);
     }
      
 }
