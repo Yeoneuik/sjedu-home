@@ -1,38 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <title>하천이랑 내부 콘텐츠 1-게임</title>
-        <link rel="stylesheet" type="text/css" href="style/style.css">
-        <script type="text/javascript" src="scripts/main.js"></script>
-        <script src="https://kit.fontawesome.com/ae391fd72f.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="centerContainer">
-          
-           <div id="bg">
-           <figure>
-            <img class="interaction" src="assets/img/1.png" href="" class="btn btn-sm btn-outline-primary" value="PLAY" onclick="play1()">
-            <audio id="audio1" src="assets/sound/1.wav"></audio>
-          </figure>
-           <figure>
-            <img class="interaction" src="assets/img/2.png" href="" class="btn btn-sm btn-outline-primary" value="PLAY" onclick="play2()">
-            <audio id="audio2" src="assets/sound/2.wav"></audio>
-          </figure>
-          <figure>
-            <img class="interaction" src="assets/img/3.png" href="" class="btn btn-sm btn-outline-primary" value="PLAY" onclick="play3()">
-            <audio id="audio3" src="assets/sound/3.wav"></audio>
-          </figure>
-          <figure>
-            <img class="interaction" src="assets/img/4.png" href="" class="btn btn-sm btn-outline-primary" value="PLAY" onclick="play4()">
-            <audio id="audio4" src="assets/sound/4.wav"></audio>
-          </figure>
-           <img id="nextBtn" src="assets/img/next.png">
-            </div>
-        </div>
 
-    </body>
-    <script>
-        
-    </script>
+<head>
+  <meta charset="UTF-8">
+  <title>하천이랑 내부 콘텐츠 1-게임</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <script type="text/javascript" src="scripts/main.js"></script>
+</head>
+
+<body>
+  <div class="centerContainer">
+    <div id="bg">
+      <video id="video" preload="auto" src="assets/video.mp4">
+        영상 재생이 지원되지 않는 브라우저입니다.
+      </video>
+      <img id="btn1" class="btn" src="assets/img/bt1.png">
+      <img id="btn2" class="btn" src="assets/img/bt2.png">
+      <img id="btn3" class="btn" src="assets/img/bt3.png">
+      <img id="btn4" class="btn" src="assets/img/bt4.png">
+    </div>
+  </div>
+
+</body>
 </html>

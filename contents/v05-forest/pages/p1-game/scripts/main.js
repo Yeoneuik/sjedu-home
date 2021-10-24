@@ -1,23 +1,51 @@
+var global = {
+    playUntil: 0,
+    video: undefined,
+    phase: 0,
+    time: [3.2, 4.5, 6.5, 7.65, 100],
+    changing: false
+}
+
+function getBtn(i) {
+    return document.getElementById('btn'+i);
+}
+
+function resumeVideo() {
+    if (global.video.currentTime >= global.time[global.phase]) {
+        global.video.pause();
+        global.changing = false;
+        getBtn(global.phase+1).classList.add('clickable');
+    } else {
+        if(!global.changing) {
+            global.video.play();
+            global.changing = true;
+        }  
+        window.requestAnimationFrame(resumeVideo);
+    }
+}
+
+function nextPhase() {
+    getBtn(global.phase+1).classList.remove('clickable');
+    global.phase += 1;
+    resumeVideo();
+}
+
 window.onload = function() {
+    global.video = document.getElementById('video');
 
-function play1(){
-            var audio = document.getElementById("audio1");
-            audio.play();
-        }
-function play2(){
-            var audio = document.getElementById("audio2");
-            audio.play();
-        }
-           
-function play3(){
-            var audio = document.getElementById("audio3");
-            audio.play();
-        }
-function play4(){
-            var audio = document.getElementById("audio4");
-            audio.play();
-        }
+    global.video.onended = function() {
+        setTimeout(parent.startGame, 1500);
+    }
 
-document.getElementById('nextBtn').onclick = parent.nextContent;
-    
+    for(let i of [1, 2, 3, 4]) {
+        getBtn(i).onclick = function() {
+            if(!global.changing) {
+                if(global.phase == i-1) {
+                    nextPhase();
+                }
+            }
+        }
+    }
+
+    resumeVideo();
 }
