@@ -4,7 +4,7 @@ window.onload = function () {
     var button = document.getElementById("button");
 
 
-    video.onended = parent.startGame();
+    video.onended = parent.startGame;
 
     video.oncanplaythrough = function() {
         document.getElementById("loading").style.display = "none";
