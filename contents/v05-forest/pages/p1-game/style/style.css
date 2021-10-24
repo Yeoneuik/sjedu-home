@@ -28,8 +28,7 @@ body {
     align-items: center;
     text-align: center;
     
-    background-image: url('../img/bg.jpg');
-    background-color: darkolivegreen;
+    background-image: url('../assets/img/bg.jpg');
 }
 
 
@@ -83,7 +82,7 @@ body {
 }
 
 .interaction{
-    height: 40vh;
+    height: 37vh;
     transition: .5s;
     /*filter: brightness(30%);*/
 }
@@ -100,4 +99,16 @@ body {
 
 #first{
     width:200px;
+}
+
+#nextBtn {
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+    width: 15%;
+}
+
+#nextBtn:hover {
+    filter: drop-shadow(0 0 3px yellow);
+    cursor: pointer;
 }

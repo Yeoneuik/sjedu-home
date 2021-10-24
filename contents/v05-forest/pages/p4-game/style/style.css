@@ -27,57 +27,79 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    
+    background-image: url('../assets/img/bg.jpg');
 }
+
+
+/*--로딩중 클래스--------------------------------------*/
+
+.loading {
+    position: absolute;
+    width : 100%;
+    height: 100%;
+	z-index : 10;
+    background-color: gray;
+}
+
+.box-loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-loading {
+    height: 25pt;
+    width: auto;
+    display: inline-block;
+    margin-right: 10pt;
+}
+
+.text-loading {
+    font-size: 30pt;
+    display: inline-block;
+}
+
 
 /*--이미지 클래스--------------------------------------*/
 
 #bg {
-    background-image: url('../assets/img/background.jpg');
+    /*background-image: url('../img/bg.jpg');*/
     background-repeat: no-repeat;
     background-size: cover;
+    /*background-color: darkolivegreen;*/
     background-position: center;
     height: 100%;
-    width: 100%;
+    width: 90%;
+
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
-/*--아래부터 화면 등장요소 -----------------------*/
-
-.item_lottie{
-    /*border: solid firebrick;*/
-    position:absolute;
-    height: 27vh;
-    width: 27vw;
+.interaction{
+    height: 37vh;
+    transition: .5s;
+    /*filter: brightness(30%);*/
 }
 
-.item_lottie{
-    cursor: pointer;
+.interaction:hover{
+    transition: .2s;
+    filter: brightness(100%) contrast(120%) drop-shadow(10px 0px 3px yellow) drop-shadow(-10px 0px 3px yellow) drop-shadow(0px -10px 3px yellow) drop-shadow(0px 10px 3px yellow);
 }
 
-#dish01{
-    top: 23%;
-    left: 31%;
+.interaction:active{
+    opacity: 30%;
+    
 }
 
-#dish02{
-    top: 37%;
-    left: 53%;
+#first{
+    width:200px;
 }
-
-#dish03{
-    top: 8%;
-    left: 57%;
-}
-
-#dish04{
-    top: 58%;
-    left: 29%;
-}
-
-#dish05{
-    top: 40%;
-    left: 10%;
-}
-
 
 #nextBtn {
     position: absolute;

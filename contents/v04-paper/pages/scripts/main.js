@@ -21,18 +21,6 @@ const contents = [
     {
         src: 'pages/p4/index.html',
         game: [
-            'pages/p4-game/index.html'
-        ]
-    },
-    {
-        src: 'pages/p5/index.html',
-        game: [
-            'pages/p5-game/index.html'
-        ]
-    },
-    {
-        src: 'pages/p6/index.html',
-        game: [
             
         ]
     }

@@ -9,7 +9,7 @@ window.onload = function() {
         renderer: "svg",
         loop: false,
         autoplay: false,
-        path: 'https://assets6.lottiefiles.com/packages/lf20_nqn2hpri.json'
+        path: 'https://assets3.lottiefiles.com/packages/lf20_bcqcito7.json'
     })
     
     var anim02 = lottie.loadAnimation( {
@@ -17,7 +17,7 @@ window.onload = function() {
         renderer: "svg",
         loop: false,
         autoplay: false,
-        path: 'https://assets8.lottiefiles.com/packages/lf20_cddhm7hm.json'
+        path: 'https://assets3.lottiefiles.com/packages/lf20_wyzisjjx.json'
     })
     
     var anim03 = lottie.loadAnimation( {
@@ -25,7 +25,7 @@ window.onload = function() {
         renderer: "svg",
         loop: false,
         autoplay: false,
-        path: 'https://assets10.lottiefiles.com/packages/lf20_crqewfsi.json'
+        path: 'https://assets2.lottiefiles.com/packages/lf20_hwemc6qu.json'
     })
     
     q01Sound = new Audio('assets/audio/q01.wav');
