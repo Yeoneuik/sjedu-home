@@ -58,6 +58,7 @@ var nowGaming = null;
 
 // Private Function
 function setIframe(src) {
+    console.log('loading', src);
     var iframe = document.getElementById('contentFrame');
     iframe.src = src;
 }
