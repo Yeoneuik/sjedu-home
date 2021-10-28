@@ -1,15 +1,12 @@
-function deleteDiv() {
-  const div = document.getElementById('div1');
-  
-    setTimeout(function(){
-        div.remove();
-    },5000)
-  
-}
+
 
 window.onload = function() {
     var interaction01 = document.getElementById("interaction01");
     var interaction02 = document.getElementById("interaction02");
+    const div = document.getElementById('div1');
+    
+    var played01 = false;
+    var played02 = false;
 
     var anim01 = lottie.loadAnimation( {
         container: interaction01,
@@ -35,20 +32,32 @@ window.onload = function() {
     anim02.setSpeed(1);
 
     interaction01.onclick = function() {
-        interaction01Sound.pause();
-        interaction01Sound.currentTime = 0;
-        anim01.goToAndPlay(0, true);
-        setTimeout(() => interaction01Sound.play(), 2000);
+        setTimeout(function(){
+                div.remove();
+            },5000);
+        if(!played01){
+            played01=true;
+            interaction01Sound.pause();
+            interaction01Sound.currentTime = 0;
+            anim01.goToAndPlay(0, true);
+            setTimeout(() => interaction01Sound.play(), 2000);
+            
+        }
+        
     }
     
     interaction02.onclick = function() {
-        interaction01Sound.pause();
-        interaction01Sound.currentTime = 0;
-        anim02.goToAndPlay(0, true);
-        setTimeout(() => interaction01Sound.play(), 2000);
-        setTimeout(function(){
-            console.log("turning to the next page");
-            parent.nextContent();
-        },5000)
+        if(!played02){
+            played02=true;
+            interaction01Sound.pause();
+            interaction01Sound.currentTime = 0;
+            anim02.goToAndPlay(0, true);
+            setTimeout(() => interaction01Sound.play(), 2000);
+            setTimeout(function(){
+                console.log("turning to the next page");
+                parent.nextContent();
+            },5000)
+        }
+        
     }
 }

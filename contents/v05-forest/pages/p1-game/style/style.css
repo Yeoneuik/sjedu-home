@@ -76,7 +76,13 @@ body {
 }
 
 .clickable {
-    filter: drop-shadow(1pt 10pt 40pt yellow)
-            drop-shadow(-1pt -10pt 10pt #faffd3);
+    -webkit-animation:filter-animation 1s infinite;
+    filter: drop-shadow(1pt 1pt 20pt orange) drop-shadow(1pt 10pt 40pt yellow);
     cursor: pointer;
+}
+
+@-webkit-keyframes filter-animation{
+    0% { filter: drop-shadow(1pt 1pt 0pt orange);}
+    50% { filter: drop-shadow(1pt 1pt 20pt orange) brightness(300%);}
+    100% { filter: drop-shadow(1pt 1pt 0pt orange);}
 }

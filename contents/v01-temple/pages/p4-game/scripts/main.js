@@ -4,6 +4,12 @@ window.onload = function() {
     var dish03 = document.getElementById("dish03");
     var dish04 = document.getElementById("dish04");
     var dish05 = document.getElementById("dish05");
+    
+    var played01 = false;
+    var played02 = false;
+    var played03 = false;
+    var played04 = false;
+    var played05 = false;
 
     var anim01 = lottie.loadAnimation( {
         container: dish01,
@@ -50,48 +56,55 @@ window.onload = function() {
 
     anim01.setSpeed(1);
 
-    // 호버시 재생
-    // book.addEventListener('mouseenter', function() {
-    //     anim.play();
-    // })
-
-    // book.addEventListener('mouseleave', function() {
-    //     anim.stop()
-    // })
-
     dish01.onclick = function() {
-        dish01Sound.pause();
-        dish01Sound.currentTime = 0;
-        anim01.goToAndPlay(0, true);
-        setTimeout(() => dish01Sound.play(), 0);
+        if(!played01){
+            played01=true;
+            dish01Sound.pause();
+            dish01Sound.currentTime = 0;
+            anim01.goToAndPlay(0, true);
+            setTimeout(() => dish01Sound.play(), 0);
+        }
     }
     
      dish02.onclick = function() {
-        dish01Sound.pause();
-        dish01Sound.currentTime = 0;
-        anim02.goToAndPlay(0, true);
-        setTimeout(() => dish01Sound.play(), 0);
+         if(!played02){
+            played02=true;
+            dish01Sound.pause();
+            dish01Sound.currentTime = 0;
+            anim02.goToAndPlay(0, true);
+            setTimeout(() => dish01Sound.play(), 0);
+         }
     }
      
      dish03.onclick = function() {
-        dish01Sound.pause();
-        dish01Sound.currentTime = 0;
-        anim03.goToAndPlay(0, true);
-        setTimeout(() => dish01Sound.play(), 0);
+         if(!played03){
+             played03=true;
+            dish01Sound.pause();
+            dish01Sound.currentTime = 0;
+            anim03.goToAndPlay(0, true);
+            setTimeout(() => dish01Sound.play(), 0);
+         }
     }
      
      dish04.onclick = function() {
-        dish01Sound.pause();
-        dish01Sound.currentTime = 0;
-        anim04.goToAndPlay(0, true);
-        setTimeout(() => dish01Sound.play(), 0);
+         if(!played04){
+             played04=true;
+             dish01Sound.pause();
+            dish01Sound.currentTime = 0;
+            anim04.goToAndPlay(0, true);
+            setTimeout(() => dish01Sound.play(), 0);
+         }
+        
     }
      
      dish05.onclick = function() {
-        dish02Sound.pause();
-        dish02Sound.currentTime = 0;
-        anim05.goToAndPlay(0, true);
-        setTimeout(() => dish02Sound.play(), 0);
+         if(!played05){
+             played05=true;
+            dish02Sound.pause();
+            dish02Sound.currentTime = 0;
+            anim05.goToAndPlay(0, true);
+            setTimeout(() => dish02Sound.play(), 0);
+         }
     }
      
      document.getElementById('nextBtn').onclick = parent.nextContent;

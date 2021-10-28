@@ -2,27 +2,7 @@
 const contents = [
     {
         src: 'pages/p1/index.html',
-        game: [
-            'pages/p1-game/index.html'
-        ]
-    },
-    {
-        src: 'pages/p2/index.html',
-        game: [
-            'pages/p2-game/index.html'
-        ]
-    },
-    {
-        src: 'pages/p3/index.html',
-        game: [
-            'pages/p3-game/index.html'
-        ]
-    },
-    {
-        src: 'pages/p4/index.html',
-        game: [
-            
-        ]
+        game: []
     }
 ]
 

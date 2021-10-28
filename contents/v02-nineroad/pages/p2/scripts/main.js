@@ -8,7 +8,7 @@ window.onload = function () {
         snack.style.display = "block";
         snack.onclick = parent.startGame;
         button.play();
-        setTimeout(parent.nextContent, 6000);
+        setTimeout(parent.nextContent, 4000);
     }
 
     video.oncanplaythrough = function() {

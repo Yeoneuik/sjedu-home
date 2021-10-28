@@ -25,12 +25,14 @@ window.onload = function() {
             lott_obj.classList.remove('notclicked');
             lott.play();
             narr.pause();
+            narr2.play();
             eff.play();
             setTimeout(() => {
                 eff.currentTime=0;
                 eff.play();
+                
                 setTimeout(() => {
-                    narr2.play();
+                    
                     narr2.onended = parent.startGame;
                 }, 2000);
 
@@ -38,7 +40,7 @@ window.onload = function() {
         }
     }
     
-    narr.onended = function() {
+    /*narr.onended = function() {
         setTimeout(parent.startGame, 5000);
-    }
+    }*/
 }
