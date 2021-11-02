@@ -7,8 +7,7 @@ window.onload = function() {
 
     var isRight = false;
 
-    var narr = new Audio('assets/audio/output.mp3');
-    narr.play();
+    var narr = document.getElementById('narr');
 
     for(let fish in wrongs) {
         wrongs[fish] = new Audio('assets/audio/wrong_'+fish+'.wav');

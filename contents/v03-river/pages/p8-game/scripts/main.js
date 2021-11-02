@@ -1,7 +1,6 @@
 
 window.onload = function() {
-    narr = new Audio('assets/audio/output.mp3');
-    narr.play();
+    narr = document.getElementById('narr');
 
     narr2 = new Audio('assets/audio/thankyou.mp3');
 

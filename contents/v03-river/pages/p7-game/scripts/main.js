@@ -1,6 +1,5 @@
-window.onload = function() {
-    narr = new Audio('assets/audio/output.mp3');
-    narr.play();
+window.onload = function () {
+    narr = document.getElementById('narr');
 
     hand_obj = document.getElementById('handinhand');
 
@@ -12,19 +11,19 @@ window.onload = function() {
         autoplay: false
     });
 
-    hand_obj.onclick = function() {
+    hand_obj.onclick = function () {
         narr.pause();
         hand.play();
         hand_obj.classList.remove('notclicked');
     }
 
-    hand.addEventListener('complete', function() {
+    hand.addEventListener('complete', function () {
         console.log('complete fired');
         parent.startGame();
     })
-    
-narr.onended = function() {
+
+    narr.onended = function () {
         setTimeout(parent.startGame, 5000);
     }
-    
+
 }

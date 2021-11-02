@@ -4,7 +4,6 @@ body{
 }
 
 #mainContainer{
-    background-image:url(source/background_forest.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
