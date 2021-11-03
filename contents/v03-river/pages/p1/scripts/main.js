@@ -3,9 +3,7 @@ window.onload = function () {
     var clam = document.getElementById("clam");
     var button = document.getElementById("button");
 
-    narr = new Audio();
-
-    narr.src = "assets/narr.mp3";
+    var narr = document.getElementById('narr');
 
     button.onclick = parent.nextContent;
 

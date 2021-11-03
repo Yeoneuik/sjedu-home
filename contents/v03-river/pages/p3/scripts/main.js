@@ -1,7 +1,6 @@
 window.onload = function () {
     var video = document.getElementById("vid");
 
-
     video.onended = parent.startGame;
 
     video.oncanplaythrough = function() {

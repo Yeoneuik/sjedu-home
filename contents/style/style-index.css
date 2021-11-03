@@ -110,43 +110,27 @@ i{
     filter: drop-shadow(0 0px 30px #FFE576) drop-shadow(0 7px 0 #FFE576) ;
 }
 
-#unready{
-    filter: sepia(50%) drop-shadow(0 7px 0 #d0694d);
-    
-    background-image: url(img/notReady-simple.jpg);
-    background-size: cover;
-    background-position: center;
-    
-}
-
-#unready:hover{
-    cursor: not-allowed;
-    height: 230px;
-    margin: 10px;
-    box-shadow: inset 1px 1px 100px #999999;
-}
-
 #copyright{
     width: auto;
     color: darkslategray;
 }
 .Bt1{
     transition: .1s ease-in;
-    background-image: url(../style/button1_new.jpg);
+    background-image: url(button1_new.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .Bt2{
     transition: .1s ease-in;
-    background-image: url(../style/button2_new.jpg);
+    background-image: url(button2_new.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .Bt3{
     transition: .1s ease-in;
-    background-image: url(../style/button3_new.jpg);
+    background-image: url(button3_new.jpg);
     background-size: cover;
     background-position: center;
 }

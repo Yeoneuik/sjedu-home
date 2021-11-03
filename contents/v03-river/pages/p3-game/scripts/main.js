@@ -2,11 +2,9 @@ window.onload = function() {
     wb = document.getElementById('whitebird');
     wb2 = document.getElementById('whitebird2');
 
-    narr = new Audio('assets/audio/output.mp3');
-    narr.play();
+    narr = document.getElementById('narr');
 
-    right = new Audio();
-    right.src = 'assets/audio/right.mp3';
+    right = document.getElementById('right');
 
     wb.onclick = function() {
         wb.style.display = 'none';

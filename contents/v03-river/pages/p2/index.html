@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <title>밤절 2</title>
-        <link rel="stylesheet" type="text/css" href="../../../style/style-v-contents.css">
-        <link rel="stylesheet" type="text/css" href="style/style.css">
-        <script type="text/javascript" src="scripts/main.js"></script>
-        <script src="https://kit.fontawesome.com/ae391fd72f.js" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    </head>
-    <body>
-        
-        <div class="centerContainer">
-            <div id="loading" class="loading">
-                <div class="box-loading">
-                    <i style="margin-right: 20pt" class="text-loading fas fa-asterisk fa-spin"></i>
-                    <div class="text-loading">불러오는 중...</div>
-                </div>
-            </div>
-            <video autoplay id="vid" class="video"><source src="assets/output.mp4" type="video/mp4"></video>
-        </div>
 
-    </body>
-    <script>
-        
-    </script>
+<head>
+    <meta charset="UTF-8">
+    <title>밤절 2</title>
+    <link rel="stylesheet" type="text/css" href="../../../style/style-v-contents.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/ae391fd72f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="text/javascript" src="../../../scripts/autoplay.js"></script>
+</head>
+
+<body>
+    <div class="centerContainer">
+        <div id="loading" class="loading">
+            <div class="box-loading">
+                <i style="margin-right: 20pt" class="text-loading fas fa-asterisk fa-spin"></i>
+                <div class="text-loading">불러오는 중...</div>
+            </div>
+        </div>
+        <video autoplay id="vid" class="vid-autoplay video" src="assets/output.mp4">
+    </div>
+</body>
+
 </html>

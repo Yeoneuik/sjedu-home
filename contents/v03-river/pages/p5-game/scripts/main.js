@@ -19,15 +19,10 @@ function setphase(dst) {
 }
 
 window.onload = function() {
-    narr = new Audio();
-    narr.src = "assets/sound/output.mp3";
+    narr = document.getElementById('narr');
 
     narr2 = new Audio('assets/sound/output2.mp3');
-
-    narr.play();
-
-    magic = new Audio();
-    magic.src = "assets/sound/magic.mp3";
+    magic = new Audio("assets/sound/magic.mp3");
 
     var selleaf = document.getElementById('leaf');
     var selreed = document.getElementById('reed');
